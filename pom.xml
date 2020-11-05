@@ -38,18 +38,33 @@
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
 		mvn scm:update -->
+	<!--
 	<scm>
 		<connection>scm:git:https://github.com/MithunTechnologiesDevOps/maven-standalone-application</connection>
 		<developerConnection>scm:git:https://github.com/MithunTechnologiesDevOps/maven-standalone-application</developerConnection>
 		<tag>HEAD</tag>
 		<url>https://github.com/MithunTechnologiesDevOps/maven-standalone-application</url>
 	</scm>
-
+	-->
+<!--
 	<issueManagement>
 		<system>GitHub</system>
 		<url>https://github.com/MithunTechnologiesDevOps/maven-standalone-application/issues</url>
 	</issueManagement>
+	-->
+<distributionManagement>
+<repository>
+<id>nexus</id>
+<name>Flipkart releases repository</name>
+<url>http://13.233.145.14:9980/Sunil/repository/flipkart-releases/</url>
+</repository>
 
+<snapshotRepository>
+<id>nexus</id>
+<name>Flipkart snapshot repository</name>
+<url>http://13.233.145.14:9980/Sunil/repository/flipkart-snapshot/</url>
+</snapshotRepository>
+</distributionManagement>
 	
 	<build>
 	  <plugins>
