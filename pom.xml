@@ -62,7 +62,7 @@
 <snapshotRepository>
 <id>nexus</id>
 <name>Flipkart snapshot repository</name>
-<url>http://13.233.145.14:8081/Sunil/repository/flipkart-snapshot/</url>
+<url>http://65.0.107.98:8081/Sunil/repository/flipkart-snapshot/</url>
 </snapshotRepository>
 </distributionManagement>
 	
